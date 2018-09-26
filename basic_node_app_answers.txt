@@ -1,0 +1,10 @@
+What is a Node module?
+A node module is a set of functions you want to include in your application
+
+What is the main difference between exports and module.exports?
+The main difference is that module.exports can be reassigned to anything. Any reassignment of exports will not be available outside of the module
+
+Why is using exports recommended?
+
+By setting as exports you are using shorthand and avoid potential bugs later on down the road.
+Using exports.prop = true instead of module.exports.prop = true saves characters and avoids confusion on non-specific object type data.
